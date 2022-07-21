@@ -1,0 +1,36 @@
+.myBloc {
+  background-color: #f1ece7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 732px) {
+      flex-direction: column;
+    }
+  }
+
+  .img {
+    & img {
+      height: 380px;
+      max-width: 340px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .info {
+    margin-left: 50px;
+
+
+    @media (max-width: 732px) {
+      margin-left: 0px;
+      order: 1;
+    }
+  }
+}
+
+

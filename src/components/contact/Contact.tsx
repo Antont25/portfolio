@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './contact.module.css'
-import commonStyle from "../../common/css/style.module.css";
+import style from './contact.module.scss'
+import commonStyle from "../../common/style/scss/style.module.scss";
 import residence from '../../common/img/icons.png'
 import telefon from '../../common/img/icons8-telefon.png'
 import sms from '../../common/img/icons8-sms.png'
@@ -9,10 +9,10 @@ export const Contact = () => {
     return (
         <div className={style.contact}>
             <div className={`${commonStyle.container} ${commonStyle.blocItem}  `}>
-                <h1>Contact </h1>
+                <h1 className={commonStyle.textH1}>Contact </h1>
                 <div className={style.item}>
                     <div className={style.formBloc}>
-                        <h3>Contact mu</h3>
+                        <h3 className={commonStyle.textH3}>Contact mu</h3>
                         <form className={style.form}>
                             <input type="text" id="fname" name="fname" placeholder='Your name'/>
                             <input type="text" name="fname" placeholder='Your email'/>
@@ -21,15 +21,16 @@ export const Contact = () => {
                         </form>
                     </div>
                     <div className={style.infoBloc}>
-                        <h3>Get in touch mu</h3>
-                        <p>Always available for freelancing if the right project comes along, Feel free to
+                        <h3 className={commonStyle.textH3}>Get in touch mu</h3>
+                        <p className={commonStyle.textBody}>Always available for freelancing if the right project comes
+                            along, Feel free to
                             contact me.
                         </p>
                         <div className={style.media}>
                             <div className={style.icon}>
                                 <img src={residence} alt='residence'/>
                             </div>
-                            <span className={style.mediaBody}>
+                            <span className={`${style.mediaBody} ${commonStyle.textBody}`}>
                                     Country Ukraine,
                                 city of Chernihiv
                                 </span>
@@ -38,7 +39,7 @@ export const Contact = () => {
                             <div className={style.icon}>
                                 <img src={telefon} alt='telefon'/>
                             </div>
-                            <span className={style.mediaBody}>
+                            <span className={`${style.mediaBody} ${commonStyle.textBody}`}>
                                     tel:+3800000
                                 </span>
                         </a>
@@ -46,7 +47,7 @@ export const Contact = () => {
                             <div className={style.icon}>
                                 <img src={sms} alt='sms'/>
                             </div>
-                            <span className={style.mediaBody}>
+                            <span className={`${style.mediaBody} ${commonStyle.textBody}`}>
                                    email: antontolkachovdev@gmail.com
                                 </span>
                         </a>

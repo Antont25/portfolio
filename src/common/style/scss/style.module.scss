@@ -1,0 +1,67 @@
+@import "variable";
+
+.container {
+  max-width: 1140px;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  padding: $padding-top-bottom;
+}
+
+.blocUL li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  font-weight: 400;
+}
+
+.blocItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textH1 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 42px;
+  font-size: $font-Size-H;
+  font-family: 'Roboto Mono', monospace;
+  color: $primary-color;
+}
+
+.textH3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: $font-Size-H3;
+  font-family: 'Roboto Mono', monospace;
+  color: $primary-color;
+}
+
+.textBody {
+  font-weight: 400;
+  font-size: $font-Size-P;
+  font-family: 'Roboto Mono', monospace;
+  color: $second-color;
+}
+
+.item {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 890px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+
+

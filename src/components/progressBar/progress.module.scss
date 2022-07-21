@@ -1,0 +1,30 @@
+.containerStyles {
+  height: 20px;
+  width: 100%;
+  background-color: #e0e0de;
+  border-radius: 50px;
+  margin: 40px 0 20px 0;
+  display: flex;
+
+
+  .fillerStyles {
+    height: 100%;
+    position: relative;
+    background-color: #00695c;
+    border-radius: inherit;
+    transition: width 1s ease-in-out;
+
+    .labelStyles {
+      display: block;
+      padding: 5px;
+      font-weight: bold;
+      position: absolute;
+      top: -30px;
+      right: 0;
+      color: red;
+    }
+  }
+}
+
+
+

@@ -1,6 +1,6 @@
 import React from 'react';
-import commonStyle from '../../../common/css/style.module.css'
-import style from './nav.module.css'
+import commonStyle from '../../common/style/scss/style.module.scss'
+import style from './header.module.scss'
 
 export const Nav = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './footer.module.css'
-import commonStyle from "../../common/css/style.module.css";
+import style from './footer.module.scss'
+import commonStyle from "../../common/style/scss/style.module.scss";
 
 
 export const Footer = () => {
@@ -149,7 +149,7 @@ export const Footer = () => {
                         </svg>
                     </a>
                 </div>
-                <span className={style.footerText}>© 2022 copyright  all reserved</span>
+                <span className={`${style.footerText} ${commonStyle.textBody}`}>© 2022 copyright  all reserved</span>
             </div>
         </div>
     );

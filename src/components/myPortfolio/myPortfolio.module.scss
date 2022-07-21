@@ -1,0 +1,71 @@
+.myPortfolioBloc {
+    background-color: #f1ece7;
+
+    .portfolioItems {
+        max-width: 350px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        margin-bottom: 30px;
+
+        &:hover {
+            cursor: pointer;
+
+            .imgBloc:after {
+                transform: translate(0, 0px);
+                background: rgba(220, 150, 90, .8);
+            }
+
+            h3 {
+                color: #dc965a;
+                transition: .5s;
+            }
+
+            img {
+                transform: scale(1.2);
+
+            }
+        }
+
+
+    }
+
+    .imgBloc {
+        position: relative;
+        max-height: 340px;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: 50% 50%;
+
+        & img {
+            max-width: 300px;
+            width: 100%;
+            height: 340px;
+            transform: scale(1);
+            transition: all 1s ease-in-out;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            top: auto;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            transform: translate(0, -500px);
+            animation-duration: 0.3s;
+            transition: all 1s ease-in-out;
+
+        }
+    }
+}
+
+
+
+
+

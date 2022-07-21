@@ -1,0 +1,40 @@
+@import "src/common/style/scss/variable";
+
+.headerBloc {
+  height: 70px;
+  width: 100%;
+  background-color: #f8e4d2;
+  position: fixed;
+  z-index: 1000;
+
+  & > div {
+    padding: 0;
+  }
+
+  .navBloc {
+    display: flex;
+    justify-content: right;
+    height: 100%;
+    width: 100%;
+    @media (max-width: 576px) {
+      justify-content: center;
+    }
+
+    .items {
+      display: flex;
+      width: 300px;
+      justify-content: space-between;
+      align-items: center;
+
+      & li:hover a {
+        color: $color-text-hover;
+        transition: 0.5s;
+      }
+
+      @media (max-width: 576px) {
+        padding-left: 0;
+      }
+    }
+  }
+
+}
